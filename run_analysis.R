@@ -68,6 +68,6 @@ runAnalysis <- function(){
   allData.mean <- dcast(allData.melted, subject + activity ~ variable, mean)
   
   ## write the data into file
-  write.table(allData.mean, "tidy.txt")
+  write.table(allData.mean, "tidy.txt",row.names = FALSE)
 }
 
